@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/* Шрифты */
+@font-face {
+  font-family: "TTLakes";
+  src: url("./fonts/TTLakes-Regular.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: url("./fonts/TTLakes-Medium.woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: url("./fonts/TTLakes-Bold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: url("./fonts/TTLakes-Thin.woff");
+  font-weight: 100;
+}
+/* Общие стили */
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(242, 242, 242);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+@media screen and (min-width: 1120px) {
+  .article_container {
+    margin: 0 auto;
+    padding: 16px 35px 0px 35px;
+    max-width: 1140px;
+  }
+  .article__title {
+    color: rgb(126, 126, 130);
+    font-family: TTLakes;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .article__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+  .article__list--item {
+    width: 240px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px 20px 16px;
+    background: rgb(255, 255, 255);
+  }
+  .article__list--item:nth-child(n+9) {
+    visibility: hidden;
+    display: none;
+  }
+  .article__image {
+    max-width: 130px;
+    max-height: 50px;
+  }
+  .article__span {
+    display: flex;
+    align-items: center;
+  }
+  .article__button {
+    position: relative;
+    text-align: center;
+    color: rgb(27, 28, 33);
+    font-family: TTLakes;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  .article .swiper {
+    display: none;
+  }
+  .article__list--item.show {
+    display: flex;
+    visibility: visible;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1120px) {
+  .article_container {
+    margin: 0 auto;
+    padding: 16px 35px 0px 35px;
+    min-width: 710px;
+  }
+  .article__title {
+    color: rgb(126, 126, 130);
+    font-family: TTLakes;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .article__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+  .article__list--item {
+    width: 210px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px 20px 16px;
+    background: rgb(255, 255, 255);
+  }
+  .article__list--item:nth-child(n+7) {
+    visibility: hidden;
+    display: none;
+  }
+  .article__image {
+    max-width: 130px;
+    max-height: 50px;
+  }
+  .article__span {
+    display: flex;
+    align-items: center;
+  }
+  .article__button {
+    position: relative;
+    text-align: center;
+    color: rgb(27, 28, 33);
+    font-family: TTLakes;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  .article .swiper {
+    display: none;
+  }
+  .article__list--item.show {
+    display: flex;
+    visibility: visible;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  body {
+    background-color: rgb(242, 242, 242);
+  }
+  .article__title {
+    padding: 16px;
+    color: rgb(126, 126, 130);
+    font-family: TTLakes;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  .article__list {
+    display: none;
+  }
+  .article__span {
+    display: none;
+  }
+  .swiper {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .swiper-slide {
+    margin-bottom: 50px;
+    max-height: 60px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+  }
+  .wrapper-slide {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .swiper-image {
+    margin-left: 16px;
+  }
+  .swiper-link {
+    display: block;
+  }
+  .swiper .swiper-pagination-bullet-active {
+    background: rgb(181, 182, 188);
+  }
+}/*# sourceMappingURL=style.css.map */
