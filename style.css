@@ -179,7 +179,7 @@ h2 {
     font-weight: 400;
     letter-spacing: -0.2px;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .article__list {
     display: none;
@@ -202,6 +202,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 55px;
   }
   .swiper-image {
     margin-left: 16px;

@@ -254,7 +254,7 @@ margin: 0;
       font-weight: 400;
       letter-spacing: -0.2px;
       text-transform: uppercase;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
       &__list {
         display: none;
@@ -278,12 +278,14 @@ margin: 0;
       border: 1px solid rgb(234, 234, 234);
       border-radius: 6px;
       background: rgb(255, 255, 255);
+      
     } 
 
     .wrapper-slide {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      height: 55px;
     }
 
     .swiper-image {
