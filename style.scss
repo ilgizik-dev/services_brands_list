@@ -289,9 +289,10 @@ margin: 0;
 
     .swiper-slide {
       margin-bottom: 41px;
-      border: 1px solid rgb(234, 234, 234);
-      border-radius: 6px;
-      background: rgb(255, 255, 255);
+      
+      // border: 1px solid rgb(234, 234, 234);
+      // border-radius: 6px;
+      // background: rgb(255, 255, 255);
     } 
 
     .swiper-pagination {
@@ -301,6 +302,10 @@ margin: 0;
     }
 
     .wrapper-slide {
+      margin-left: 16px;
+      border: 1px solid rgb(234, 234, 234);
+      border-radius: 6px;
+      background: rgb(255, 255, 255);
       height: 72px;
       display: flex;
       justify-content: space-between;

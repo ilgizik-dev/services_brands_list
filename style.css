@@ -204,15 +204,16 @@ h2 {
   }
   .swiper-slide {
     margin-bottom: 41px;
-    border: 1px solid rgb(234, 234, 234);
-    border-radius: 6px;
-    background: rgb(255, 255, 255);
   }
   .swiper-pagination {
     --swiper-pagination-bullet-size: 12px;
     --swiper-pagination-bullet-horizontal-gap: 6px;
   }
   .wrapper-slide {
+    margin-left: 16px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
     height: 72px;
     display: flex;
     justify-content: space-between;
