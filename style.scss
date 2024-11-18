@@ -28,7 +28,7 @@ body {
     margin: 0;
     padding: 0;
     background: rgb(242, 242, 242);
-  }
+    }
   
 * {
     box-sizing: border-box;
@@ -47,7 +47,7 @@ margin: 0;
 
 // Стили для меню article 1120px
 @media screen and (min-width: 1120px) {
-  .article {
+    .article {
 
 		// .article_container
 
@@ -74,7 +74,8 @@ margin: 0;
 		&__list {
       display: flex;
       flex-wrap: wrap;
-      gap: 25px;
+      row-gap: 16px;
+      column-gap: 32px;
       margin-bottom: 25px;
 		}
 
@@ -88,6 +89,8 @@ margin: 0;
       justify-content: space-between;
       padding: 20px 16px 20px 16px;
       background: rgb(255, 255, 255);
+      border: 1px solid rgb(234, 234, 234);
+      border-radius: 6px;
     }
 
     &__list--item:nth-child(n + 9) {
@@ -142,7 +145,11 @@ margin: 0;
  visibility: visible;
  align-items: center;
 }
+
 }
+
+
+
 
 // Cтили под планшет
 @media screen and (min-width: 767px) and (max-width: 1120px) {
@@ -152,8 +159,9 @@ margin: 0;
 
 		&_container {
       margin: 0 auto;
-      padding: 16px 35px 0px 35px;
-      min-width: 710px;
+      padding: 16px 24px 0px 24px;
+      max-width: 720px;
+      box-sizing: content-box;
 		}
 
 		// .article__title
@@ -173,20 +181,24 @@ margin: 0;
 		&__list {
       display: flex;
       flex-wrap: wrap;
-      gap: 25px;
+      justify-content: flex-start;
+      row-gap: 16px;
+      column-gap: 24px;
       margin-bottom: 25px;
 		}
 
 		// .article__list--item
 
 		&__list--item {
-      width: 210px;
+      width: 224px;
       height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 20px 16px 20px 16px;
       background: rgb(255, 255, 255);
+      border: 1px solid rgb(234, 234, 234);
+      border-radius: 6px;
     }
 
     &__list--item:nth-child(n + 7) {
@@ -241,20 +253,25 @@ margin: 0;
 
 // Стили под телефон
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  body {
-    background-color: rgb(242, 242, 242);;
-  }
+
   .article {
+
     // .article__title
+    &_container {
+      width: 288px;
+      margin: 0 auto;
+      padding: 16px 24px 0px 24px;
+    }
+
 		&__title {
-      padding: 16px;
+      width: 288px;
       color: rgb(126, 126, 130);
       font-family: TTLakes;
       font-size: 16px;
       font-weight: 400;
       letter-spacing: -0.2px;
       text-transform: uppercase;
-      margin-bottom: 40px;
+      margin-bottom: 32px;
     }
       &__list {
         display: none;
@@ -267,37 +284,43 @@ margin: 0;
 
 // Cтили для свайпера вне артикля
     .swiper{
-      max-width: 320px;
+      width: 240px;
       margin: 0 auto;
     }
 
-
     .swiper-slide {
-      margin-bottom: 50px;
-      max-height: 60px;
+      // width: 240px;
+      margin-bottom: 41px;
       border: 1px solid rgb(234, 234, 234);
       border-radius: 6px;
       background: rgb(255, 255, 255);
-      
     } 
+     
+    .swiper-pagination {
+  // --swiper-pagination-top: auto;
+    --swiper-pagination-bullet-size: 12px;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+    }
 
     .wrapper-slide {
+      height: 72px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      height: 55px;
     }
 
     .swiper-image {
       margin-left: 16px;
-      
     }
 
     .swiper-link {
       display: block;
-
+      margin-right: 16px;
     }
     
+    .swiper .swiper-pagination-bullet {
+      background: rgb(221, 221, 221);
+    }
 
     .swiper .swiper-pagination-bullet-active {
     background: rgb(181, 182, 188);
