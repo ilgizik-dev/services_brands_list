@@ -26,13 +26,11 @@ btn.addEventListener('click', function () {
 });
 
 // свайпер
-
-
-const firstSlide = document.querySelector('swiper-slide:nth-child(1)')
-
 new Swiper('.swiper', {
-    slidesPerView: 1,
     spaceBetween: 16,
+    slidesPerView: 1.25,
+    clickable: true,
+    loop: true,
     pagination: {
         el: '.swiper-pagination',
      }
